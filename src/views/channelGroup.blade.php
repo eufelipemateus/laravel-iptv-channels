@@ -7,7 +7,11 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
+<<<<<<< HEAD
                 <div class="panel-heading">Channel Group</div>
+=======
+                <div class="panel-heading">Channel</div>
+>>>>>>> 06de5f10860b48c2b2cce895533b59a9e8b57c5f
 
                 <div class="panel-body">
 					<form class="form-horizontal" role="form" method="POST" action="{{ url()->current() }}" enctype="multipart/form-data">
