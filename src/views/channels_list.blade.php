@@ -22,14 +22,18 @@
 							<div class="col-md-2">
 								<img src="{{ url($channel->logo) }}"  width="25" height="25" />						
 							</div>
-							<div class="col-md-5">
+							<div class="col-md-3">
 								{{ $channel->name }}
 							</div>
 							<div class="col-md-3">
 								{{ $channel->group->name }}
 							</div>
+							
 							<div class="col-md-1">
 							  <a href="{{  route('show_channel',$channel->id) }}">edit</a>
+							</div>
+							<div class="col-md-2">
+							  <a href="{{  route('delete_channel',$channel->id) }}">delete</a>
 							</div>
 						</div>
 					@endforeach

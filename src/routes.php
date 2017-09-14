@@ -21,7 +21,7 @@ Route::group([
 		
 		Route::get('channel/{id}', 'Felipefm32\LaravelIPTV\Controllers\showChannelController@index')->name('show_channel');
 		Route::post('channel/{id}', 'Felipefm32\LaravelIPTV\Controllers\updateChannelController@save')->name('update_channel');
-		
+		Route::get('delChannel/{id}', 'Felipefm32\LaravelIPTV\Controllers\deleteChannelController@save')->name('delete_channel');
 		
 		
 		Route::get('listChannelsGroups', 'Felipefm32\LaravelIPTV\Controllers\showListChannelsGroupsController@index')->name('list_channelsGroups');
