@@ -20,5 +20,5 @@
         "psr-4": {
 			"Felipefm32\\LaravelIPTV\\":"src/"
         }
-    },
+    }
 }
