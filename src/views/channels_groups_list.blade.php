@@ -20,7 +20,7 @@
 						{{ $group->name }}
 						</div>
 						<div class="col-md-1">
-						  <a href="{{ route('delete_channelsGroups',$group->id)  }}">remove</a>
+						  <a href="{{ route('delete_channelsGroups',$group->id)  }}">delete</a>
 						</div>
 						<div class="col-md-1">
 						  <a href="{{ route('show_channelsGroups',$group->id)  }}">edit</a>
