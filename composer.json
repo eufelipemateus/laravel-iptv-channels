@@ -1,0 +1,24 @@
+{
+    "name": "felipefm32/laravel-iptv",
+    "description": "Controller iptv system using Laravel.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Felipe Mateus",
+            "email": "contato@felipefm32.com.br"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+
+	},
+	"autoload": {
+        "classmap": [
+            "database"
+        ],
+        "psr-4": {
+			"Felipefm32\\LaravelIPTV\\":"src/"
+        }
+    }
+}
