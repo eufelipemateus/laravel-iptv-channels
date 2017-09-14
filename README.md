@@ -17,7 +17,7 @@ composer require felipefm32/laravel-iptv
 
 ```php
 <?php
-
+...
 'providers' => [
 ...
 Felipefm32\LaravelIPTV\IPTVProvider::class,
