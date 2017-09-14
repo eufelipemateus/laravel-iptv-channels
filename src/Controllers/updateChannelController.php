@@ -3,10 +3,7 @@
 namespace Felipefm32\LaravelIPTV\Controllers;
 
 use Illuminate\Http\Request;
-<<<<<<< HEAD
 use Illuminate\Validation\Rule;
-=======
->>>>>>> 06de5f10860b48c2b2cce895533b59a9e8b57c5f
 use Felipefm32\LaravelIPTV\Model\IPTVChannel;
 
 
@@ -23,7 +20,6 @@ class updateChannelController extends Controller{
 	
 	public function save($id,Request $request){
 		
-<<<<<<< HEAD
 		
 		$channel =IPTVChannel::findOrFail($id);
 		
@@ -33,13 +29,9 @@ class updateChannelController extends Controller{
 			'group_id' => 'required|exists:iptv_channel_groups,id',
 		]);
 		
+	
 		
 		
-		
-=======
-		$channel =IPTVChannel::findOrFail($id);
-		
->>>>>>> 06de5f10860b48c2b2cce895533b59a9e8b57c5f
 		$data = $request->all();
 		$channel->update($data);
 		$image = $request->file('image');

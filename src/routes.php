@@ -9,10 +9,6 @@ Route::group([
 	],
     function(){
         Route::get('list',"Felipefm32\LaravelIPTV\Controllers\ChannelListController@index");
-<<<<<<< HEAD
-=======
-
->>>>>>> 06de5f10860b48c2b2cce895533b59a9e8b57c5f
     });
 Route::group([
     'middleware' => 'web',
