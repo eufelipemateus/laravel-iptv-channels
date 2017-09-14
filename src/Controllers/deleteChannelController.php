@@ -23,7 +23,7 @@ class deleteChannelController extends Controller{
 		
 		$group->delete();
 		
-		return redirect()->route('list_channel');
+		return redirect()->route('list_channels');
 
 	}
 }
