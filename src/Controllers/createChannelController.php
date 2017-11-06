@@ -26,6 +26,7 @@ class createChannelController extends Controller
 		]);
 		
 		
+		
 		$data = $request->all();
 	
 

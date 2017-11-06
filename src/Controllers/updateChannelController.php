@@ -38,9 +38,18 @@ class updateChannelController extends Controller{
 		
 		if(isset($image)){
 			$channel->logo=$image;
-			$channel->save;
+		}
+	
+		
+		if(!isset($data['radio'])){
+			$channel->radio=false;
+		}else{
+			$channel->radio=true;
+			
 		}
 		
+		
+		$channel->save();
 		return redirect()->route('list_channels');
 	}
 }

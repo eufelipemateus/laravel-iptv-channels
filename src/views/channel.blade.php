@@ -1,6 +1,30 @@
 @extends('layouts.app')
 
+@section('style')
+<style>
+.form-group input[type="checkbox"] {
+    display: none;
+}
 
+.form-group input[type="checkbox"] + .btn-group > label span {
+    width: 20px;
+}
+
+.form-group input[type="checkbox"] + .btn-group > label span:first-child {
+    display: none;
+}
+.form-group input[type="checkbox"] + .btn-group > label span:last-child {
+    display: inline-block;   
+}
+
+.form-group input[type="checkbox"]:checked + .btn-group > label span:first-child {
+    display: inline-block;
+}
+.form-group input[type="checkbox"]:checked + .btn-group > label span:last-child {
+    display: none;   
+}
+</style>
+@endsection
 
 @section('content')
 <div class="container">
@@ -78,6 +102,21 @@
 								</select>
 							</div>
 						</div>
+						<div class="form-group">
+							<div  class="col-md-4" ></div>
+							<input id="radio" type="checkbox"   class="form-control" value='1'  name="radio" @if(@$Channel->radio) checked @endif  >
+							
+							<div class="btn-group">
+								<label for="radio" class="btn btn-default">
+									<span class="glyphicon glyphicon-ok"></span>
+									<span> </span>
+								</label>
+								<label for="radio" class="btn btn-default active">
+									Radio
+								</label>
+							</div>
+						</div>
+						
 						<div class="row">
 							<div class="col-md-6 col-md-offset-5">
 								<button>Salvar</button>

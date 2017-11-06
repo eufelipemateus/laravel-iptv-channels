@@ -12,7 +12,7 @@ class IPTVChannel extends Model
      * @var array
      */
     protected $fillable = [
-        'group_id', 'number', 'name','logo','url_stream'
+        'group_id', 'number', 'name','logo','url_stream','radio',
     ];
 	
 	protected $table = "iptv_channels";
@@ -27,7 +27,7 @@ class IPTVChannel extends Model
 	
 	public function scopeGetList($query){
 		
-		return  $query->orderBy("number")->get(); 
+		return  $query->orderBy("radio")->orderBy('number')->get(); 
 		
 	}
 	
@@ -42,4 +42,7 @@ class IPTVChannel extends Model
 			
 		$this->attributes['logo'] =  $path.$nameLogo;
 	}
+	
+	
+	
 }
