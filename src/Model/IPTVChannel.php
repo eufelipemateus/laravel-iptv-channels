@@ -1,6 +1,6 @@
 <?php
 
-namespace Felipefm32\LaravelIPTV\Model;
+namespace  FelipeMateus\IPTV\Model;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -14,7 +14,7 @@ class IPTVChannel extends Model
     protected $fillable = [
         'group_id', 'number', 'name','logo','url_stream','radio',
     ];
-	
+
 	protected $table = "iptv_channels";
 
 	/**
@@ -22,27 +22,27 @@ class IPTVChannel extends Model
      */
     public function group()
     {
-        return $this->belongsTo('Felipefm32\LaravelIPTV\Model\IPTVChannelGroup');
+        return $this->belongsTo('FelipeMateus\IPTV\Model\IPTVChannelGroup');
     }
-	
+
 	public function scopeGetList($query){
-		
-		return  $query->orderBy("radio")->orderBy('number')->get(); 
-		
+
+		return  $query->orderBy("radio")->orderBy('number')->get();
+
 	}
-	
+
 	public function setLogoAttribute($image){
-		
+
 		$nameLogo = md5($image->getClientOriginalName()).'.'.$image->getClientOriginalExtension();
-		
+
 		$path = "logos/";
 		$destinationPath = public_path('/'.$path);
 
 		$image->move($destinationPath, $nameLogo);
-			
+
 		$this->attributes['logo'] =  $path.$nameLogo;
 	}
-	
-	
-	
+
+
+
 }

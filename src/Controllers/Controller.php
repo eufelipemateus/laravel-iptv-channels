@@ -1,6 +1,6 @@
 <?php
 
-namespace Felipefm32\LaravelIPTV\Controllers;
+namespace  FelipeMateus\IPTV\Controllers;
 
 
 use Illuminate\Foundation\Bus\DispatchesJobs;
@@ -10,7 +10,7 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 
 
 class Controller extends BaseController{
-	
+
 	use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
-	
+
 }

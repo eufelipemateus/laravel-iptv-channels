@@ -1,5 +1,6 @@
 {
-    "name": "felipefm32/laravel-iptv",
+    "name": "felipemateus/laravel-iptv",
+    "version": "2.0.0",
     "description": "Controller iptv system using Laravel.",
     "type": "library",
     "license": "MIT",
@@ -15,7 +16,14 @@
 	},
 	"autoload": {
         "psr-4": {
-			"Felipefm32\\LaravelIPTV\\":"src/"
+			"FelipeMateus\\IPTV\\":"src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "FelipeMateus\\IPTV\\IPTVProvider"
+            ]
         }
     },
     "minimum-stability": "stable",
