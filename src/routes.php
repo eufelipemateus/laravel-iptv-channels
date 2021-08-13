@@ -8,14 +8,14 @@ Route::group([
     'middleware' => 'api',
 	],
     function(){
-        Route::get('list',"FelipeMateus\IPTV\Controllers\ChannelListController@index");
+        Route::get('list',"FelipeMateus\IPTV\Controllers\ChannelListM3UController@show");
     });
 Route::group([
     'middleware' => ['web'],
 	],
 	function(){
 		Route::get('channel/list', 'FelipeMateus\IPTV\Controllers\ChannelController@list')->name('list_channel');
-		Route::get('channel/add', 'FelipeMateus\IPTV\Controllers\ChannelController@add')->name('add_channel');
+		Route::get('channel/add', 'FelipeMateus\IPTV\Controllers\ChannelController@new')->name('add_channel');
 		Route::post('channel/add', 'FelipeMateus\IPTV\Controllers\ChannelController@create')->name('create_channel');
 
 		Route::get('channel/{id}', 'FelipeMateus\IPTV\Controllers\ChannelController@show')->name('show_channel');
@@ -25,7 +25,7 @@ Route::group([
 
 		Route::get('group/list', 'FelipeMateus\IPTV\Controllers\GroupController@list')->name('list_group');
 
-		Route::get('group/add', 'FelipeMateus\IPTV\Controllers\GroupController@add')->name('add_group');
+		Route::get('group/add', 'FelipeMateus\IPTV\Controllers\GroupController@new')->name('add_group');
 		Route::post('group/add', 'FelipeMateus\IPTV\Controllers\GroupController@create')->name('create_group');
 
 		Route::get('group/{id}', 'FelipeMateus\IPTV\Controllers\GroupController@show')->name('show_group');

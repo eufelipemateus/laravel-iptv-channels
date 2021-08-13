@@ -13,13 +13,12 @@ Para instalar você precisa ter laravel 8x.
 ### Execute o comando abaixo na raiz do projeto para baixar.
 
 
-
 ```bash
 
 composer require felipefm32/laravel-iptv
 
 ```
-  
+ 
 
 ### Depois adicione no arquivo 'config/app.php'
 
