@@ -16,7 +16,7 @@ Para instalar você precisa ter laravel 8x.
 
 ```bash
 
-composer require felipemateus/laravel-iptv
+composer require felipefm32/laravel-iptv
 
 ```
   
