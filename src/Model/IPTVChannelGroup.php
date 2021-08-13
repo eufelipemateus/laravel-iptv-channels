@@ -1,6 +1,6 @@
 <?php
 
-namespace Felipefm32\LaravelIPTV\Model;
+namespace  FelipeMateus\IPTV\Model;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -14,7 +14,15 @@ class IPTVChannelGroup extends Model
     protected $fillable = [
         'name'
     ];
-	
+
 	protected $table = "iptv_channel_groups";
-	
+
+    /**
+     * Get the comments for the blog post.
+     */
+    public function comments()
+    {
+        return $this->hasMany('FelipeMateus\IPTV\Model\IPTVChannel');
+    }
+
 }

@@ -1,13 +1,13 @@
 <?php
 
-namespace Felipefm32\LaravelIPTV;
+namespace FelipeMateus\IPTV;
 
 use Illuminate\Support\ServiceProvider;
 
 class IPTVProvider extends ServiceProvider
 {
-	
-	
+
+
     /**
      * Bootstrap the application services.
      *
@@ -17,10 +17,10 @@ class IPTVProvider extends ServiceProvider
     {
         $this->loadMigrationsFrom(__DIR__.'/database/migrations/');
 		$this->loadViewsFrom(__DIR__.'/views', 'IPTV');
-		$this->loadRoutesFrom(__DIR__.'/routes.php');	
+		$this->loadRoutesFrom(__DIR__.'/routes.php');
     }
 
-    
+
 
     /**
      * Register the application services.
@@ -31,5 +31,5 @@ class IPTVProvider extends ServiceProvider
     {
         //
     }
-	
+
 }
