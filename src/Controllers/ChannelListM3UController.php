@@ -17,6 +17,6 @@ class ChannelListM3UController  extends Controller{
 		$data["list"] = IPTVChannel::getList();
 		return response()
             ->view("IPTV::list_M3U",$data, 200)
-            ->header('Content-Type', "text/plain");
+            ->header('Content-Type', "text/plain; charset=utf-8");
 	}
 }

@@ -1,11 +1,25 @@
 @extends('IPTV::app')
 
+@section('style')
+<style>
+.row{
+    margin: 1% 0;
+}
+</style>
+@endsection
+
 @section('content')
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="card">
-                <div class="card-header">Channel Group</div>
+                <div class="card-header">
+                    <div class="row">
+						<div class="col-md-7"><b>Group</b></div>
+						<div class="col-md-3"><a href="{{ route('list_channel') }}">Channel List</a></div>
+						<div class="col-md-2"><a href="{{ route('list_group') }}">Groups List</a></div>
+					</div>
+                </div>
 
                 <div class="card-body">
 					<form class="form-horizontal" role="form" method="POST" action="{{ url()->current() }}" enctype="multipart/form-data">

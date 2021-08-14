@@ -25,6 +25,11 @@ class IPTVChannel extends Model
         return $this->belongsTo('FelipeMateus\IPTV\Model\IPTVChannelGroup');
     }
 
+    /**
+     * get list fucntion
+     *
+     * @return list
+     */
 	public function scopeGetList($query){
 
 		return  $query->orderBy("radio")->orderBy('number')->get();
@@ -32,17 +37,10 @@ class IPTVChannel extends Model
 	}
 
 	public function setLogoAttribute($image){
-
 		$nameLogo = md5($image->getClientOriginalName()).'.'.$image->getClientOriginalExtension();
-
 		$path = "logos/";
 		$destinationPath = public_path('/'.$path);
-
 		$image->move($destinationPath, $nameLogo);
-
 		$this->attributes['logo'] =  $path.$nameLogo;
 	}
-
-
-
 }

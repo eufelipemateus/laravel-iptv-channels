@@ -4,11 +4,11 @@
 
 
 Route::group([
-	'prefix'=>"channels",
+    'prefix' => 'public',
     'middleware' => 'api',
 	],
     function(){
-        Route::get('list',"FelipeMateus\IPTV\Controllers\ChannelListM3UController@show");
+        Route::get('m3u8',"FelipeMateus\IPTV\Controllers\ChannelListM3UController@show");
     });
 Route::group([
     'middleware' => ['web'],

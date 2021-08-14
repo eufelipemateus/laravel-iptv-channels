@@ -2,6 +2,7 @@
 
 @section('style')
 <style>
+/*
 .form-group input[type="checkbox"] {
     display: none;
 }
@@ -22,6 +23,10 @@
 }
 .form-group input[type="checkbox"]:checked + .btn-group > label span:last-child {
     display: none;
+}*/
+
+.row{
+    margin: 1% 0;
 }
 </style>
 @endsection
@@ -31,7 +36,13 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="card">
-                <div class="card-header">Channel</div>
+                <div class="card-header">
+                    <div class="row">
+						<div class="col-md-7"><b>Channel</b></div>
+						<div class="col-md-3"><a href="{{ route('list_channel') }}">Channel List</a></div>
+						<div class="col-md-2"><a href="{{ route('list_group') }}">Groups List</a></div>
+					</div>
+                </div>
 
                 <div class="card-body">
 					<form class="form-horizontal" role="form" method="POST" action="{{ url()->current()  }}" enctype="multipart/form-data">
@@ -103,10 +114,11 @@
 							</div>
 						</div>
 
-
-                        <div class="form-check form-switch">
-                            <input class="form-check-input" type="checkbox"  id="flexSwitchCheckDefault"  value='1'  name="radio" @if(@$Channel->radio) checked @endif>
-                            <label class="form-check-label" for="flexSwitchCheckDefault">É uma rádio?</label>
+						<div class="form-group">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox"  id="flexSwitchCheckDefault"  value='1'  name="radio" @if(@$Channel->radio) checked @endif>
+                                <label class="form-check-label" for="flexSwitchCheckDefault">É uma rádio?</label>
+                            </div>
                         </div>
 
 						<div class="row">

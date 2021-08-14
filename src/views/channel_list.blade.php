@@ -20,7 +20,7 @@
 								<b>{{ $channel->number }}.</b>
 							</div>
 							<div class="col-md-2">
-								<img src="{{ url($channel->logo) }}"  width="25" height="25" />
+								<img src="{{ url($channel->logo) }}"  width="50"  />
 							</div>
 							<div class="col-md-3">
 								{{ $channel->name }}
