@@ -20,11 +20,12 @@ class CreateIptvChannels extends Migration
 			$table->integer("number")->unique();
 			$table->string("name",60);
 			$table->text("logo",200)->nullable();
-			$table->text("url_stream",200);
+			// $table->text("url_stream",200);
 			$table->boolean('radio')->default(false);
             $table->timestamps();
-			
+
 			$table->foreign('group_id')->references('id')->on('iptv_channel_groups');
+
 
         });
     }

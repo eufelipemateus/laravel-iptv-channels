@@ -6,7 +6,8 @@ use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
 use FelipeMateus\IPTV\Model\IPTVChannelGroup;
 use FelipeMateus\IPTV\Model\IPTVChannel;
-
+use FelipeMateus\IPTV\Model\IPTVUrl;
+use FelipeMateus\IPTV\Model\IPTVCdn;
 
 class ChannelController extends Controller
 {
@@ -39,6 +40,8 @@ class ChannelController extends Controller
 	public function show($id){
 		$data["Channel"] = IPTVChannel::findOrFail($id);
 		$data["Groupslist"] = IPTVChannelGroup::get();
+        $data['Cdnslist'] = IPTVCdn::all();
+        $data["urls"] = IPTVUrl::where("iptv_channel_id", $id )->get();
 		return view("IPTV::channel",$data);
 	}
 
@@ -110,7 +113,7 @@ class ChannelController extends Controller
      * @return view -> IPTV::channel_list
      */
     public function list(){
-		$data['list'] = IPTVChannel::getList();
+		$data['list'] = IPTVChannel::all();
 		return view("IPTV::channel_list",$data);
 	}
 }
