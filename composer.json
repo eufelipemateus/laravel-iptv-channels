@@ -10,9 +10,9 @@
             "email": "contato@felipefm32.com.br"
         }
     ],
-    "minimum-stability": "dev",
     "require": {
-
+        "php": "^7.4|^8.0",
+        "laravel/framework": "^8.54"
 	},
 	"autoload": {
         "psr-4": {

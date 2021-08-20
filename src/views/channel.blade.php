@@ -38,9 +38,10 @@
             <div class="card">
                 <div class="card-header">
                     <div class="row">
-						<div class="col-md-7"><b>Channel</b></div>
+						<div class="col-md-5"><b>Channel</b></div>
 						<div class="col-md-3"><a href="{{ route('list_channel') }}">Channel List</a></div>
 						<div class="col-md-2"><a href="{{ route('list_group') }}">Groups List</a></div>
+                        <div class="col-md-2"><a href="{{ route('add_cdn') }}">Add Cdn</a></div>
 					</div>
                 </div>
 
@@ -90,17 +91,6 @@
 						</div>
 
 
-						<div class="form-group">
-							<label for="url_stream" class="col-md-4 control-label">Url Stream</label>
-							<div class="col-md-6">
-								<input id="url_stream" type="text"   class="form-control" name="url_stream" value="@if(isset($Channel->url_stream)){{ $Channel->url_stream }}@endif" placeholder="" required >
-								@if ($errors->has('url_stream'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('url_stream') }}</strong>
-                                    </span>
-                                @endif
-							</div>
-						</div>
 
 
 						<div class="form-group">
@@ -132,5 +122,88 @@
 			</div>
 		</div>
 	</div>
+
+    @if(isset($Channel))
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="card">
+                <div class="card-header">
+                    <div class="row">
+						<div class="col-md-7"><b>Urls CDN</b></div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    @foreach ($urls as $url)
+                    <form class="form-vertical" role="form" method="POST" action="{{ route('update_update',['id'=>$url->id])  }}" enctype="multipart/form-data">
+                    <input type="hidden" id="channel_id_{{$url->id}}" name="iptv_channel_id" value="{{$url->iptv_channel_id}}">
+                    {{ csrf_field() }}
+
+                        <div class="row">
+
+							<div class="col-md-5">
+                                <label for="url_stream_{{$url->id}}" class="col-md-4 control-label">Url Stream</label>
+								<input id="url_stream_{{$url->id}}" type="text"   class="form-control" name="url_stream" value="@if(isset($url->url_stream)){{ $url->url_stream }}@endif" placeholder="" required >
+								@if ($errors->has('url_stream'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('url_stream') }}</strong>
+                                    </span>
+                                @endif
+							</div>
+
+							<div class="col-md-3">
+                                <label for="cdn_id_{{$url->id}}" class="col-md-3 control-label">CDN</label>
+								<select id="cdn_id_{{$url->id}}" class="form-control" name="iptv_cdn_id"   >
+									@foreach($Cdnslist as $cdn)
+										<option  @if( $url->iptv_cdn_id ==  $cdn->id)   selected @endif   value="{{ $cdn->id}}">{{$cdn->name }}</option>
+									@endforeach
+								</select>
+							</div>
+
+                            <div class="col-md-2">
+                                <button type="submit" class="btn btn-primary">Salvar</button>
+                            </div>
+
+                            <div class="col-md-2">
+                                <a href="{{  route('delete_url',$url->id) }}"  class="btn btn-primary">Delete</a>
+                            </div>
+                        </div>
+                    </form>
+                    @endforeach
+                    <form class="form-vertical" role="form" method="POST" action="{{ route('create_url')  }}" enctype="multipart/form-data">
+                        {{ csrf_field() }}
+                        <input type="hidden" id="new_channel_id" name="iptv_channel_id" value="{{$Channel->id}}">
+                        <div class="row">
+
+                            <div class="col-md-5">
+                                <label for="new_url_stream" class="col-md-4 control-label">Url Stream</label>
+                                <input id="new_url_stream" type="text"   class="form-control" name="url_stream" value="" placeholder="" required >
+                                @if ($errors->has('url_stream'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('url_stream') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+
+
+							<div class="col-md-5">
+                                <label for="new_cdn_id" class="col-md-3 control-label">CDN</label>
+								<select id="new_cdn_id" class="form-control" name="iptv_cdn_id"   >
+									@foreach($Cdnslist as $cdn)
+										<option value="{{ $cdn->id}}">{{$cdn->name }}</option>
+									@endforeach
+								</select>
+							</div>
+
+                            <div class="col-md-2">
+                                <button type="submit" class="btn btn-primary">Adicionar</button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    @endif
 </div>
 @endsection

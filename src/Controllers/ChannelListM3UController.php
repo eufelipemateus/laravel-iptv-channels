@@ -13,8 +13,8 @@ class ChannelListM3UController  extends Controller{
      *
      * @return response
      */
-	public function show(){
-		$data["list"] = IPTVChannel::getList();
+	public function show($slug){
+		$data["list"] = IPTVChannel::getListM3u8($slug);
 		return response()
             ->view("IPTV::list_M3U",$data, 200)
             ->header('Content-Type', "text/plain; charset=utf-8");
