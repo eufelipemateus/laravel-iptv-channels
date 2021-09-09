@@ -1,5 +1,5 @@
 {
-    "name": "felipemateus/laravel-iptv",
+    "name": "felipemateus/iptv-channels",
     "version": "2.0.1",
     "description": "This package controls the IPTV channel list and generates an m3u8 file using laravel.",
     "type": "library",
@@ -7,7 +7,7 @@
     "authors": [
         {
             "name": "Felipe Mateus",
-            "email": "contato@felipefm32.com.br"
+            "email": "eu@felipemateus.com"
         }
     ],
     "require": {
