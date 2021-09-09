@@ -1,6 +1,8 @@
 
 # Laravel IPTV Channels -  FelipeMateus\IPTVChannels
 
+[![Latest Stable Version](http://poser.pugx.org/felipemateus/iptv-channels/v)](https://packagist.org/packages/felipemateus/iptv-channels) [![Total Downloads](http://poser.pugx.org/felipemateus/iptv-channels/downloads)](https://packagist.org/packages/felipemateus/iptv-channels) [![Latest Unstable Version](http://poser.pugx.org/felipemateus/iptv-channels/v/unstable)](https://packagist.org/packages/felipemateus/iptv-channels) [![License](http://poser.pugx.org/felipemateus/iptv-channels/license)](https://packagist.org/packages/felipemateus/iptv-channels) [![PHP Version Require](http://poser.pugx.org/felipemateus/iptv-channels/require/php)](https://packagist.org/packages/felipemateus/iptv-channels)
+
 ![Lista de Canais  here](https://felipemateus.com/wp-content/uploads/2021/08/list_channel.png)
 
 
