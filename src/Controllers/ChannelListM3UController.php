@@ -1,10 +1,10 @@
 <?php
 
-namespace  FelipeMateus\IPTV\Controllers;
+namespace  FelipeMateus\IPTVChannels\Controllers;
 
 use Illuminate\Http\Request;
 
-use  FelipeMateus\IPTV\Model\IPTVChannel;
+use  FelipeMateus\IPTVChannels\Model\IPTVChannel;
 
 class ChannelListM3UController  extends Controller{
 

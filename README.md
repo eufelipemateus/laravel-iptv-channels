@@ -1,5 +1,5 @@
 
-# Laravel IPTV FelipeMateus\IPTV
+# Laravel IPTV Channels -  FelipeMateus\IPTVChannels
 
 ![Lista de Canais  here](https://felipemateus.com/wp-content/uploads/2021/08/list_channel.png)
 
@@ -31,7 +31,7 @@ composer require felipefm32/laravel-iptv
 
 ...  
 
-FelipeMateus\IPTV\IPTVProvider::class,
+FelipeMateus\IPTVChannels\IPTVProvider::class,
 
 ...
 
@@ -44,7 +44,7 @@ FelipeMateus\IPTV\IPTVProvider::class,
 php artisan migrate
 ```
 
-[Informações complementares](https://felipemateus.com/?p=3254) 
+[Informações complementares](https://felipemateus.com/blog/2021/08/pacote-gerenciador-de-canais-iptv-no-laravel) 
 
 ## Author
 

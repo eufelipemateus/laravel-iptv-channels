@@ -1,6 +1,6 @@
 <?php
 
-namespace FelipeMateus\IPTV;
+namespace FelipeMateus\IPTVChannels;
 
 use Illuminate\Support\ServiceProvider;
 

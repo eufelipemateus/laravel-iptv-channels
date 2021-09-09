@@ -1,10 +1,10 @@
 <?php
 
-namespace  FelipeMateus\IPTV\Controllers;
+namespace  FelipeMateus\IPTVChannels\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
-use FelipeMateus\IPTV\Model\IPTVCdn;
+use FelipeMateus\IPTVChannels\Model\IPTVCdn;
 
 
 class CdnController extends Controller

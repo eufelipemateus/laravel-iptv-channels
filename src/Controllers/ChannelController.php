@@ -1,13 +1,13 @@
 <?php
 
-namespace  FelipeMateus\IPTV\Controllers;
+namespace  FelipeMateus\IPTVChannels\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
-use FelipeMateus\IPTV\Model\IPTVChannelGroup;
-use FelipeMateus\IPTV\Model\IPTVChannel;
-use FelipeMateus\IPTV\Model\IPTVUrl;
-use FelipeMateus\IPTV\Model\IPTVCdn;
+use FelipeMateus\IPTVChannels\Model\IPTVChannelGroup;
+use FelipeMateus\IPTVChannels\Model\IPTVChannel;
+use FelipeMateus\IPTVChannels\Model\IPTVUrl;
+use FelipeMateus\IPTVChannels\Model\IPTVCdn;
 
 class ChannelController extends Controller
 {

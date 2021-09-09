@@ -1,6 +1,6 @@
 <?php
 
-namespace  FelipeMateus\IPTV\Controllers;
+namespace  FelipeMateus\IPTVChannels\Controllers;
 
 
 use Illuminate\Foundation\Bus\DispatchesJobs;

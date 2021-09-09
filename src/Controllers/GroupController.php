@@ -1,9 +1,9 @@
 <?php
 
-namespace  FelipeMateus\IPTV\Controllers;
+namespace  FelipeMateus\IPTVChannels\Controllers;
 
 use Illuminate\Http\Request;
-use FelipeMateus\IPTV\Model\IPTVChannelGroup;
+use FelipeMateus\IPTVChannels\Model\IPTVChannelGroup;
 
 class GroupController extends Controller
 {
