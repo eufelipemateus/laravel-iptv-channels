@@ -14,8 +14,7 @@ Esta é uma biblioteca que controla lista de canais iptv e gera uma lista m3u
 
 
 ```bash
-composer require felipefm32/laravel-iptv
-
+composer require felipemateus/iptv-channels
 ```
 
 ### Depois adicione no arquivo 'config/app.php'
