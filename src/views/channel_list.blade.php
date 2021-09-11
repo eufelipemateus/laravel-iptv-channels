@@ -7,10 +7,11 @@
             <div class="card">
                 <div class="card-header">
 					<div class="row">
-						<div class="col-md-5"><b>Channels</b></div>
+						<div class="col-md-3"><b>Channels</b></div>
                         <div class="col-md-2"><a href="{{ route('add_channel') }}">Add Channel</a></div>
                         <div class="col-md-2"><a href="{{ route('list_cdn') }}">CDN List</a></div>
 						<div class="col-md-3"><a href="{{ route('list_group') }}">Channel Groups</a></div>
+                        <div class="col-md-2"><a href="{{ route('config') }}">Configuração</a></div>
 					</div>
 				</div>
 

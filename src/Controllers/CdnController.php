@@ -5,6 +5,7 @@ namespace  FelipeMateus\IPTVChannels\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
 use FelipeMateus\IPTVChannels\Model\IPTVCdn;
+use FelipeMateus\IPTVChannels\Model\IPTVConfig;
 
 
 class CdnController extends Controller
@@ -97,6 +98,7 @@ class CdnController extends Controller
      */
     public function list(){
 		$data['list'] = IPTVCdn::all();
+        $data['url_cdn'] = IPTVConfig::get('URL_CDN');
 		return view("IPTV::cdn_list",$data);
 	}
 }

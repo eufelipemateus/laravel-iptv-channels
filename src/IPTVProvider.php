@@ -2,10 +2,11 @@
 
 namespace FelipeMateus\IPTVChannels;
 
+use Illuminate\Routing\Router;
 use Illuminate\Support\ServiceProvider;
+use  FelipeMateus\IPTVChannels\Middleware\PublicCdn;
 
-class IPTVProvider extends ServiceProvider
-{
+class IPTVProvider extends ServiceProvider {
 
 
     /**
@@ -13,8 +14,8 @@ class IPTVProvider extends ServiceProvider
      *
      * @return void
      */
-    public function boot()
-    {
+    public function boot(){
+        $this->registerMidleware();
         $this->loadMigrationsFrom(__DIR__.'/database/migrations/');
 		$this->loadViewsFrom(__DIR__.'/views', 'IPTV');
 		$this->loadRoutesFrom(__DIR__.'/routes.php');
@@ -30,6 +31,16 @@ class IPTVProvider extends ServiceProvider
     public function register()
     {
         //
+    }
+
+    /**
+     * Register Midleware
+     *
+     * @return void
+     */
+    private function registerMidleware(){
+        $router = $this->app->make(Router::class);
+        $router->aliasMiddleware('public_cdn', PublicCdn::class);
     }
 
 }

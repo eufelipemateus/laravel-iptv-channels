@@ -103,14 +103,14 @@
 								</select>
 							</div>
 						</div>
-
+                        @if($radio_stream )
 						<div class="form-group">
                             <div class="form-check form-switch">
                                 <input class="form-check-input" type="checkbox"  id="flexSwitchCheckDefault"  value='1'  name="radio" @if(@$Channel->radio) checked @endif>
                                 <label class="form-check-label" for="flexSwitchCheckDefault">É uma rádio?</label>
                             </div>
                         </div>
-
+                        @endif
 						<div class="row">
 							<div class="col-md-6 col-md-offset-5">
 								<button class="btn btn-primary">Salvar</button>

@@ -4,7 +4,8 @@ namespace  FelipeMateus\IPTVChannels\Controllers;
 
 use Illuminate\Http\Request;
 
-use  FelipeMateus\IPTVChannels\Model\IPTVChannel;
+use FelipeMateus\IPTVChannels\Model\IPTVChannel;
+use FelipeMateus\IPTVChannels\Model\IPTVConfig;
 
 class ChannelListM3UController  extends Controller{
 
@@ -15,8 +16,15 @@ class ChannelListM3UController  extends Controller{
      */
 	public function show($slug){
 		$data["list"] = IPTVChannel::getListM3u8($slug);
-		return response()
-            ->view("IPTV::list_M3U",$data, 200)
-            ->header('Content-Type', "text/plain; charset=utf-8");
+
+		$response = response()->view("IPTV::list_M3U",$data, 200);
+        $response->header('Content-Type', "text/plain; charset=utf-8");
+
+        if(IPTVConfig::get('DOWNLOAD_FILE')){
+            $response->header('Cache-Control', 'public');
+            $response->header('Content-Description', 'File Transfer');
+            $response->header('Content-Disposition', 'attachment; filename=' . $slug . '.m3u8');
+        }
+        return $response;
 	}
 }

@@ -8,6 +8,7 @@ use FelipeMateus\IPTVChannels\Model\IPTVChannelGroup;
 use FelipeMateus\IPTVChannels\Model\IPTVChannel;
 use FelipeMateus\IPTVChannels\Model\IPTVUrl;
 use FelipeMateus\IPTVChannels\Model\IPTVCdn;
+use FelipeMateus\IPTVChannels\Model\IPTVConfig;
 
 class ChannelController extends Controller
 {
@@ -28,6 +29,7 @@ class ChannelController extends Controller
      */
 	public function new(){
 		$data["Groupslist"] = IPTVChannelGroup::get();
+        $data['radio_stream'] = IPTVConfig::get("RADIO_STREAM");
 		return view("IPTV::channel",$data);
 	}
 
@@ -42,6 +44,7 @@ class ChannelController extends Controller
         $data["Groupslist"] = IPTVChannelGroup::get();
         $data['Cdnslist'] = IPTVCdn::all();
         $data["urls"] = IPTVUrl::where("iptv_channel_id", $id )->get();
+        $data['radio_stream'] = IPTVConfig::get("RADIO_STREAM");
 		return view("IPTV::channel",$data);
 	}
 
