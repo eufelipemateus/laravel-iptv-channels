@@ -1,0 +1,5 @@
+{
+    "RADIO_STREAM":"Enable urls for radio? ",
+    "DOWNLOAD_FILE":"Force download m3u8 file? ",
+    "URL_CDN":"Enable url of CDN playlist?"
+}

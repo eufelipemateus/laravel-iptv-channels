@@ -11,7 +11,7 @@ Route::group([
          Route::get('/{slug}',"FelipeMateus\IPTVChannels\Controllers\ChannelListM3UController@show")->name("cdn-playslit");
     });
 Route::group([
-    'middleware' => ['web'],
+    'middleware' => ['web', 'iptv_locale'],
 	],
 	function(){
         Route::prefix('channel')->group(function () {
@@ -50,7 +50,6 @@ Route::group([
             Route::get('/del/{id}', 'FelipeMateus\IPTVChannels\Controllers\CdnController@delete')->name('delete_cdn');
         });
 
-
         Route::prefix('url')->group(function () {
             Route::post('/add', 'FelipeMateus\IPTVChannels\Controllers\UrlController@create')->name('create_url');
             Route::post('/{id}', 'FelipeMateus\IPTVChannels\Controllers\UrlController@update')->name('update_update');
@@ -59,5 +58,4 @@ Route::group([
 
         Route::get('iptv/config', 'FelipeMateus\IPTVChannels\Controllers\ConfigController@config')->name('config');
         Route::post('iptv/config', 'FelipeMateus\IPTVChannels\Controllers\ConfigController@configSave')->name('config_save');
-
 	});

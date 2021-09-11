@@ -38,10 +38,10 @@
             <div class="card">
                 <div class="card-header">
                     <div class="row">
-						<div class="col-md-5"><b>Channel</b></div>
-						<div class="col-md-3"><a href="{{ route('list_channel') }}">Channel List</a></div>
-						<div class="col-md-2"><a href="{{ route('list_group') }}">Groups List</a></div>
-                        <div class="col-md-2"><a href="{{ route('add_cdn') }}">Add Cdn</a></div>
+						<div class="col-md-3"><b>{{ __('Channel') }} </b></div>
+						<div class="col-md-3"><a href="{{ route('list_channel') }}">{{  __('Channel List') }}</a></div>
+						<div class="col-md-3"><a href="{{ route('list_group') }}">{{ __('Groups List') }}</a></div>
+                        <div class="col-md-3"><a href="{{ route('add_cdn') }}">{{ __('Add CDN') }}</a></div>
 					</div>
                 </div>
 
@@ -51,7 +51,7 @@
 						{{ csrf_field() }}
 
 						<div class="form-group">
-							<label for="number" class="col-md-4 control-label">Number</label>
+							<label for="number" class="col-md-4 control-label">{{ __('Number') }}</label>
 							<div class="col-md-6">
 								<input id="number" type="number" min="1"   class="form-control" name="number" value="@if(isset($Channel->number)){{ $Channel->number }}@endif" placeholder="" required autofocus>
 
@@ -65,7 +65,7 @@
 
 
 						<div class="form-group">
-							<label for="image" class="col-md-4 control-label">Logo</label>
+							<label for="image" class="col-md-4 control-label">{{ __('Logo') }}</label>
 							<div class="col-md-6">
 								<input id="image" type="file"   class="form-control" name="image" @if(!isset($Channel->logo)) required @endif placeholder=""  >
 
@@ -79,7 +79,7 @@
 
 
 						<div class="form-group">
-							<label for="name" class="col-md-4 control-label">Name</label>
+							<label for="name" class="col-md-4 control-label">{{ __('Name') }}</label>
 							<div class="col-md-6">
 								<input id="name" type="text"   class="form-control" name="name" value="@if(isset($Channel->name)){{ $Channel->name }}@endif" placeholder="" required >
 								@if ($errors->has('name'))
@@ -94,7 +94,7 @@
 
 
 						<div class="form-group">
-							<label for="group_id" class="col-md-4 control-label">Group</label>
+							<label for="group_id" class="col-md-4 control-label">{{ __('Group') }}</label>
 							<div class="col-md-6">
 								<select id="group_id" class="form-control" name="group_id"   >
 									@foreach($Groupslist as $group)
@@ -107,13 +107,13 @@
 						<div class="form-group">
                             <div class="form-check form-switch">
                                 <input class="form-check-input" type="checkbox"  id="flexSwitchCheckDefault"  value='1'  name="radio" @if(@$Channel->radio) checked @endif>
-                                <label class="form-check-label" for="flexSwitchCheckDefault">É uma rádio?</label>
+                                <label class="form-check-label" for="flexSwitchCheckDefault">{{ __('is Radio?') }}</label>
                             </div>
                         </div>
                         @endif
 						<div class="row">
 							<div class="col-md-6 col-md-offset-5">
-								<button class="btn btn-primary">Salvar</button>
+								<button class="btn btn-primary">{{ __('Save')}}</button>
 							</div>
 						</div>
 
@@ -129,7 +129,7 @@
             <div class="card">
                 <div class="card-header">
                     <div class="row">
-						<div class="col-md-7"><b>Urls CDN</b></div>
+						<div class="col-md-7"><b>{{ __('URLs')}}</b></div>
                     </div>
                 </div>
                 <div class="card-body">
@@ -141,7 +141,7 @@
                         <div class="row">
 
 							<div class="col-md-5">
-                                <label for="url_stream_{{$url->id}}" class="col-md-4 control-label">Url Stream</label>
+                                <label for="url_stream_{{$url->id}}" class="col-md-4 control-label">{{ __('URl Stream') }}</label>
 								<input id="url_stream_{{$url->id}}" type="text"   class="form-control" name="url_stream" value="@if(isset($url->url_stream)){{ $url->url_stream }}@endif" placeholder="" required >
 								@if ($errors->has('url_stream'))
                                     <span class="help-block">
@@ -160,11 +160,11 @@
 							</div>
 
                             <div class="col-md-2">
-                                <button type="submit" class="btn btn-primary">Salvar</button>
+                                <button type="submit" class="btn btn-primary">{{ __('Save') }}</button>
                             </div>
 
                             <div class="col-md-2">
-                                <a href="{{  route('delete_url',$url->id) }}"  class="btn btn-primary">Delete</a>
+                                <a href="{{  route('delete_url',$url->id) }}"  class="btn btn-primary">{{ __('delete') }}</a>
                             </div>
                         </div>
                     </form>
@@ -175,7 +175,7 @@
                         <div class="row">
 
                             <div class="col-md-5">
-                                <label for="new_url_stream" class="col-md-4 control-label">Url Stream</label>
+                                <label for="new_url_stream" class="col-md-4 control-label">{{ __('URl Stream') }}</label>
                                 <input id="new_url_stream" type="text"   class="form-control" name="url_stream" value="" placeholder="" required >
                                 @if ($errors->has('url_stream'))
                                     <span class="help-block">
@@ -195,7 +195,7 @@
 							</div>
 
                             <div class="col-md-2">
-                                <button type="submit" class="btn btn-primary">Adicionar</button>
+                                <button type="submit" class="btn btn-primary">{{ __('Add')}}</button>
                             </div>
 
                         </div>

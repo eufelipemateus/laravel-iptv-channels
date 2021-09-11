@@ -3,16 +3,16 @@
 @section('content')
 <div class="container">
     <div class="row">
-        <div class="col-md-8 col-md-offset-2">
+        <div class="col-md-10 col-md-offset-2">
             <div class="card">
                 <div class="card-header">
 					<div class="row">
-						<div class="col-md-3"><b>Channels</b></div>
-                        <div class="col-md-2"><a href="{{ route('add_channel') }}">Add Channel</a></div>
-                        <div class="col-md-2"><a href="{{ route('list_cdn') }}">CDN List</a></div>
-						<div class="col-md-3"><a href="{{ route('list_group') }}">Channel Groups</a></div>
-                        <div class="col-md-2"><a href="{{ route('config') }}">Configuração</a></div>
-					</div>
+						<div class="col-md-3"><b>{{ __('Channels') }}</b></div>
+                        <div class="col-md-3"><a href="{{ route('add_channel') }}">{{ __('Add Channel') }}</a></div>
+                        <div class="col-md-2"><a href="{{ route('list_cdn') }}">{{ __('CDN List') }}</a></div>
+                        <div class="col-md-2"><a href="{{ route('list_group') }}">{{ __('Groups List') }}</a></div>
+                        <div class="col-md-2"><a href="{{ route('config') }}">{{ __('Config')}}</a></div>
+                    </div>
 				</div>
 
                 <div class="card-body">
@@ -27,15 +27,15 @@
 							<div class="col-md-3">
 								{{ $channel->name }}
 							</div>
-							<div class="col-md-3">
+							<div class="col-md-2">
 								{{ $channel->group->name }}
 							</div>
 
-							<div class="col-md-1">
-							  <a href="{{  route('show_channel',$channel->id) }}">edit</a>
+							<div class="col-md-2">
+							  <a href="{{  route('show_channel',$channel->id) }}">{{ __('edit') }}</a>
 							</div>
 							<div class="col-md-2">
-							  <a href="{{  route('delete_channel',$channel->id) }}">delete</a>
+							  <a href="{{  route('delete_channel',$channel->id) }}">{{ __('delete')}}</a>
 							</div>
 						</div>
 					@endforeach
