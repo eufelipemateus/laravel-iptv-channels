@@ -8,13 +8,13 @@ This is a package create to generate and control channel list m3u8 using php Lar
 
 
 
-![Lista de Canais](https://felipemateus.com/wp-content/uploads/2021/08/list_channel.png)
+![Lista de Canais](https://felipemateus.com/wp-content/uploads/2021/09/list_channel2.png)
 
 ## Instaling
 
 You need install the laravel 8x.
 
-###  Execute the command below in root to install the package in your project.
+###  Run the command below in root to install the package in your project.
   
   
 

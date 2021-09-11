@@ -7,11 +7,11 @@
             <div class="card">
                 <div class="card-header">
 					<div class="row">
-						<div class="col-md-3"><h3>CDN</h3></div>
-                        <div class="col-md-2"><a href="{{ route('add_cdn') }}">Add Cdn</a></div>
-						<div class="col-md-3"><a href="{{ route('list_group') }}">Channel Groups</a></div>
-						<div class="col-md-2"><a href="{{ route('list_channel') }}">Channel List</a></div>
-                        <div class="col-md-2"><a href="{{ route('config') }}">Configuração</a></div>
+						<div class="col-md-2"><h3>CDN</h3></div>
+                        <div class="col-md-2"><a href="{{ route('add_cdn') }}">{{ __('Add Cdn')}}</a></div>
+						<div class="col-md-3"><a href="{{ route('list_group') }}">{{ __('Groups List') }}</a></div>
+						<div class="col-md-3"><a href="{{ route('list_channel') }}">{{  __('Channel List') }}</a></div>
+                        <div class="col-md-2"><a href="{{ route('config') }}">{{ __('Config')}}</a></div>
 					</div>
 				</div>
 
@@ -32,11 +32,11 @@
 							  <a href="{{  route('cdn-playslit',$cdn->slug) }}">Playslit</a>
 							</div>
                             @endif
-							<div class="col-md-1">
-							  <a href="{{  route('show_cdn',$cdn->id) }}">edit</a>
+							<div class="col-md-2">
+							  <a href="{{  route('show_cdn',$cdn->id) }}">{{ __('edit') }}</a>
 							</div>
 							<div class="col-md-2">
-							  <a href="{{  route('delete_cdn',$cdn->id) }}">delete</a>
+							  <a href="{{  route('delete_cdn',$cdn->id) }}">{{ __('delete')}}</a>
 							</div>
 						</div>
 					@endforeach

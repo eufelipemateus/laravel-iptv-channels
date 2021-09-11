@@ -4,10 +4,10 @@ namespace  FelipeMateus\IPTVChannels\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
 use FelipeMateus\IPTVChannels\Model\IPTVConfig;
 
-
-class PublicCdn
+class IPTVLocaleMiddleware
 {
     /**
      * Handle an incoming request.
@@ -18,9 +18,8 @@ class PublicCdn
      */
     public function handle(Request $request, Closure $next)
     {
-        if(!IPTVConfig::get('URL_CDN')){
-            return response(['Url cdn is disabled.'], 503);
-        }
-        return  $next($request);
+        $locale =  IPTVConfig::get('CURRENT_LOCALE','br');
+        App::setLocale($locale);
+        return $next($request);
     }
 }
