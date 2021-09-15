@@ -12,7 +12,7 @@ This is a package create to generate and control channel list m3u8 using php Lar
 
 ## Instaling
 
-You need install the laravel 8x.
+Tested in Laravel 8.0.
 
 ###  Run the command below in root to install the package in your project.
   
