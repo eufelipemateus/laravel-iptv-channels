@@ -20,7 +20,7 @@ class IPTVChannelGroup extends Model
     /**
      * Get the comments for the blog post.
      */
-    public function comments()
+    public function channels()
     {
         return $this->hasMany('FelipeMateus\IPTVChannels\Model\IPTVChannel');
     }
