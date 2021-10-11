@@ -5,7 +5,7 @@ namespace  FelipeMateus\IPTVChannels\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
 use FelipeMateus\IPTVChannels\Model\IPTVCdn;
-use FelipeMateus\IPTVChannels\Model\IPTVConfig;
+use FelipeMateus\IPTVCore\Model\IPTVConfig;
 
 
 class CdnController extends Controller

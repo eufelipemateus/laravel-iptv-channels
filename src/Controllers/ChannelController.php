@@ -8,7 +8,7 @@ use FelipeMateus\IPTVChannels\Model\IPTVChannelGroup;
 use FelipeMateus\IPTVChannels\Model\IPTVChannel;
 use FelipeMateus\IPTVChannels\Model\IPTVUrl;
 use FelipeMateus\IPTVChannels\Model\IPTVCdn;
-use FelipeMateus\IPTVChannels\Model\IPTVConfig;
+use FelipeMateus\IPTVCore\Model\IPTVConfig;
 
 class ChannelController extends Controller
 {

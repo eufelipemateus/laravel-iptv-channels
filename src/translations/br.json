@@ -1,10 +1,5 @@
 {
-    "RADIO_STREAM":"Habilitar urls para radio? ",
-    "DOWNLOAD_FILE":"Força fazer donwload de arquivo m3u8? ",
-    "URL_CDN":"Habilitar url da playlist CDN?",
-    "Save":"Salvar",
-
-    "IPTV Config":"Configuração IPTV",
+  
     "Channel": "Canal",
     "Channel List": "Lista Canais",
     "Groups List": "Lista Grupos",
@@ -14,7 +9,6 @@
     "Channels": "Canais",
     "Add Channel": "Adicionar Canal",
 
-    "Config":"Configuração",
 
     "edit": "Editar",
     "delete": "Excluir",
@@ -29,7 +23,5 @@
     "is Radio?": "É um Rádio?",
     "URLs": "CDN URLs",
     "URl Stream": "URl Video",
-    "Add": "Adicionar",
-    "Locale": "Localidade"
-
+    "Add": "Adicionar"
 }

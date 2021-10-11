@@ -53,7 +53,4 @@ Route::group([
             Route::post('/{id}', 'FelipeMateus\IPTVChannels\Controllers\UrlController@update')->name('update_update');
             Route::get('/del/{id}', 'FelipeMateus\IPTVChannels\Controllers\UrlController@delete')->name('delete_url');
         });
-
-        Route::get('iptv/config', 'FelipeMateus\IPTVChannels\Controllers\ConfigController@config')->name('config');
-        Route::post('iptv/config', 'FelipeMateus\IPTVChannels\Controllers\ConfigController@configSave')->name('config_save');
 	});

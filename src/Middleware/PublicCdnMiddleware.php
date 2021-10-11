@@ -4,7 +4,7 @@ namespace  FelipeMateus\IPTVChannels\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
-use FelipeMateus\IPTVChannels\Model\IPTVConfig;
+use FelipeMateus\IPTVCore\Model\IPTVConfig;
 
 class PublicCdnMiddleware
 {

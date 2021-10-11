@@ -5,7 +5,7 @@ namespace  FelipeMateus\IPTVChannels\Controllers;
 use Illuminate\Http\Request;
 
 use FelipeMateus\IPTVChannels\Model\IPTVChannel;
-use FelipeMateus\IPTVChannels\Model\IPTVConfig;
+use FelipeMateus\IPTVCore\Model\IPTVConfig;
 
 class ChannelListM3UController  extends Controller{
 
