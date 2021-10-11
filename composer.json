@@ -45,5 +45,8 @@
         }
     },
     "minimum-stability": "stable",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "suggest": {
+        "felipemateus/iptv-customers": "Allows you to control customers, plans assigned to each channel."
+    }
 }

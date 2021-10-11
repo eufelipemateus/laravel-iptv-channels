@@ -1,8 +1,6 @@
 <?php
 
 #IPTV Routes
-
-
 Route::group([
     'prefix' => 'public/m3u8',
     'middleware' => ['api','public_cdn'],
