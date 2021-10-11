@@ -6,9 +6,10 @@ use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
 use FelipeMateus\IPTVChannels\Model\IPTVCdn;
 use FelipeMateus\IPTVChannels\Model\IPTVUrl;
+use FelipeMateus\IPTVCore\Controllers\CoreController;
 
 
-class UrlController extends Controller
+class UrlController extends CoreController
 {
     /**
      * Create a new controller instance.

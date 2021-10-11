@@ -6,8 +6,9 @@ use Illuminate\Http\Request;
 
 use FelipeMateus\IPTVChannels\Model\IPTVChannel;
 use FelipeMateus\IPTVCore\Model\IPTVConfig;
+use FelipeMateus\IPTVCore\Controllers\CoreController;
 
-class ChannelListM3UController  extends Controller{
+class ChannelListM3UController  extends CoreController{
 
     /**
      *  This fucntion return file M3U to list to player

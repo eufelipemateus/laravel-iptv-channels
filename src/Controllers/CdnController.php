@@ -6,9 +6,9 @@ use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
 use FelipeMateus\IPTVChannels\Model\IPTVCdn;
 use FelipeMateus\IPTVCore\Model\IPTVConfig;
+use FelipeMateus\IPTVCore\Controllers\CoreController;
 
-
-class CdnController extends Controller
+class CdnController extends CoreController
 {
     /**
      * Create a new controller instance.

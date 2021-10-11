@@ -9,8 +9,9 @@ use FelipeMateus\IPTVChannels\Model\IPTVChannel;
 use FelipeMateus\IPTVChannels\Model\IPTVUrl;
 use FelipeMateus\IPTVChannels\Model\IPTVCdn;
 use FelipeMateus\IPTVCore\Model\IPTVConfig;
+use FelipeMateus\IPTVCore\Controllers\CoreController;
 
-class ChannelController extends Controller
+class ChannelController extends CoreController
 {
     /**
      * Create a new controller instance.
