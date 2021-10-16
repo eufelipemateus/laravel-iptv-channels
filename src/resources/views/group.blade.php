@@ -9,15 +9,17 @@
 @endsection
 
 @section('content')
+<!-- Page Heading -->
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <h1 class="h3 mb-0 text-gray-800">{{ __('Channels Groups')   }}</h1>
+</div>
 <div class="container">
     <div class="row">
-        <div class="col-md-8 col-md-offset-2">
+        <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
                     <div class="row">
 						<div class="col-md-6"><b>{{ __('Group') }}</b></div>
-						<div class="col-md-3"><a href="{{ route('list_channel') }}">{{  __('Channel List') }}</a></div>
-						<div class="col-md-3"><a href="{{ route('list_group') }}">{{ __('Groups List') }}</a></div>
 					</div>
                 </div>
 

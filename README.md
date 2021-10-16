@@ -8,7 +8,7 @@ This is a package create to generate and control channel list m3u8 using php Lar
 
 
 
-![Screenshot Feipe Mateus IPTV Channels](https://felipemateus.com/wp-content/uploads/2021/09/list_channel2.png)
+![Screenshot Feipe Mateus IPTV Channels](/screenshots/channel_list.jpg?raw=true)
 
 ## Instaling
 

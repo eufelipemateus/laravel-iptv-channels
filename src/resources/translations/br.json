@@ -1,5 +1,5 @@
 {
-  
+
     "Channel": "Canal",
     "Channel List": "Lista Canais",
     "Groups List": "Lista Grupos",
@@ -9,6 +9,7 @@
     "Channels": "Canais",
     "Add Channel": "Adicionar Canal",
 
+    "Groups": "Grupos",
 
     "edit": "Editar",
     "delete": "Excluir",

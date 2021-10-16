@@ -1,17 +1,19 @@
 @extends('IPTV::app')
 
 @section('content')
+<!-- Page Heading -->
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <h1 class="h3 mb-0 text-gray-800">{{ __('Channels')   }}</h1>
+    <a href="{{ route('add_channel') }}" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+         class="fas fa-plus fa-sm text-white-50"></i> {{ __('Add Channel') }}</a>
+</div>
 <div class="container">
     <div class="row">
-        <div class="col-md-10 col-md-offset-2">
+        <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
 					<div class="row">
-						<div class="col-md-3"><b>{{ __('Channels') }}</b></div>
-                        <div class="col-md-3"><a href="{{ route('add_channel') }}">{{ __('Add Channel') }}</a></div>
-                        <div class="col-md-2"><a href="{{ route('list_cdn') }}">{{ __('CDN List') }}</a></div>
-                        <div class="col-md-2"><a href="{{ route('list_group') }}">{{ __('Groups List') }}</a></div>
-                        <div class="col-md-2"><a href="{{ route('config') }}">{{ __('Config')}}</a></div>
+						<div class="col-md-3"><b>{{ __('Channels List') }}</b></div>
                     </div>
 				</div>
 
