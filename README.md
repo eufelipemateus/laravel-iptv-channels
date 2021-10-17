@@ -49,7 +49,7 @@ php artisan migrate
 ```
 
 
-[more info](https://felipemateus.com/blog/2021/08/pacote-gerenciador-de-canais-iptv-no-laravel)
+[more info about iptv-channels](https://felipemateus.com/blog/2021/08/pacote-gerenciador-de-canais-iptv-no-laravel)
 
 
 ## License
