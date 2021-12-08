@@ -99,6 +99,7 @@ class CdnController extends CoreController
     public function list(){
 		$data['list'] = IPTVCdn::all();
         $data['url_cdn'] = IPTVConfig::get('URL_CDN');
+        $data['donwload'] =  IPTVConfig::get('DOWNLOAD_FILE');
 		return view("IPTV::cdn_list",$data);
 	}
 }

@@ -29,11 +29,17 @@
 								{{ $cdn->name }}
 							</div>
 
-                            @if($url_cdn)
+                            @if($url_cdn && !$donwload)
                             <div class="col-md-3">
-							  <a href="{{  route('cdn-playslit',$cdn->slug) }}">Playslit</a>
+							  <a href="{{  route('cdn-playslit',$cdn->slug) }}" href="_blank">Playslit</a>
 							</div>
                             @endif
+                            @if ($url_cdn && $donwload)
+                            <div class="col-md-3">
+							  <a href="{{  route('cdn-playslit',$cdn->slug) }}">Donwload</a>
+							</div>
+                            @endif
+
 							<div class="col-md-3">
 							  <a href="{{  route('show_cdn',$cdn->id) }}">{{ __('edit') }}</a>
 							</div>
