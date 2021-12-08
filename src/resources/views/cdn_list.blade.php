@@ -31,7 +31,7 @@
 
                             @if($url_cdn && !$donwload)
                             <div class="col-md-3">
-							  <a href="{{  route('cdn-playslit',$cdn->slug) }}" href="_blank">Playslit</a>
+							  <a href="{{  route('cdn-playslit',$cdn->slug) }}" target="_blank">Playslit</a>
 							</div>
                             @endif
                             @if ($url_cdn && $donwload)
