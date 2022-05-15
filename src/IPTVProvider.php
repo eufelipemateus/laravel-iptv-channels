@@ -5,7 +5,7 @@ namespace FelipeMateus\IPTVChannels;
 use Illuminate\Routing\Router;
 use Illuminate\Support\ServiceProvider;
 use FelipeMateus\IPTVChannels\Middleware\PublicCdnMiddleware;
-use FelipeMateus\IPTVCore\Class\IPTVProviderBase;
+use FelipeMateus\IPTVCore\Helpers\IPTVProviderBase;
 use FelipeMateus\IPTVChannels\Dashs\Channels;
 use FelipeMateus\IPTVChannels\Dashs\Groups;
 use FelipeMateus\IPTVChannels\Dashs\Cdns;

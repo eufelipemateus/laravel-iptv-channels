@@ -2,7 +2,7 @@
 
 namespace FelipeMateus\IPTVChannels\Dashs;
 
-use FelipeMateus\IPTVCore\Class\IPTVDashBase;
+use FelipeMateus\IPTVCore\Helpers\IPTVDashBase;
 use FelipeMateus\IPTVChannels\Model\IPTVChannel;
 
 

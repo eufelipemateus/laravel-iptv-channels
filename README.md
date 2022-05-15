@@ -10,7 +10,7 @@ This is a package create to generate and control channel list m3u8 using php Lar
 
 Tested in Laravel 8.0.
 
-### Run the command below in root to install the package in your project.
+### Run the command below in root to install the package in your project
   
 ```bash
 
@@ -43,7 +43,7 @@ php artisan migrate
 
 - [more info about iptv-channels](https://felipemateus.com/blog/2021/08/pacote-gerenciador-de-canais-iptv-no-laravel)
 
-- To add new locale compatibility you need contribute to [iptv-core](https://github.com/eufelipemateus/laravel-iptv-core/blob/main/src/Class/Locale.php) first.
+- To add new locale compatibility you need contribute to [iptv-core](https://github.com/eufelipemateus/laravel-iptv-core/blob/main/src/Helpers/Locale.php) first.
 
 - [Discord Channel to discussion about sugestion,Feature and etc.](https://discord.com/channels/885888529845076078/953528360615690270)
 

@@ -31,7 +31,7 @@
     "require": {
         "php": "^7.4|^8.0",
         "laravel/framework": "^8.54",
-        "felipemateus/iptv-core":"^1.0"
+        "felipemateus/iptv-core":"1.1"
 	},
 	"autoload": {
         "psr-4": {
