@@ -171,7 +171,7 @@
                         </div>
                     </form>
                     @endforeach
-                    <form class="form-vertical" role="form" method="POST" action="{{ route('create_url', false)  }}" enctype="multipart/form-data">
+                    <form class="form-vertical" role="form" method="POST" action="{{ route('create_url',[], false)  }}" enctype="multipart/form-data">
                         {{ csrf_field() }}
                         <input type="hidden" id="new_channel_id" name="iptv_channel_id" value="{{$Channel->id}}">
                         <div class="row">
