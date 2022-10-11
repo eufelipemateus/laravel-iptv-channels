@@ -1,15 +1,15 @@
 <?php
 
-namespace  FelipeMateus\IPTVChannels\Controllers;
+namespace  Tschope\IPTVChannels\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
-use FelipeMateus\IPTVChannels\Model\IPTVChannelGroup;
-use FelipeMateus\IPTVChannels\Model\IPTVChannel;
-use FelipeMateus\IPTVChannels\Model\IPTVUrl;
-use FelipeMateus\IPTVChannels\Model\IPTVCdn;
-use FelipeMateus\IPTVCore\Model\IPTVConfig;
-use FelipeMateus\IPTVCore\Controllers\CoreController;
+use Tschope\IPTVChannels\Model\IPTVChannelGroup;
+use Tschope\IPTVChannels\Model\IPTVChannel;
+use Tschope\IPTVChannels\Model\IPTVUrl;
+use Tschope\IPTVChannels\Model\IPTVCdn;
+use Tschope\IPTVCore\Model\IPTVConfig;
+use Tschope\IPTVCore\Controllers\CoreController;
 
 class ChannelController extends CoreController
 {

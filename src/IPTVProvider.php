@@ -1,14 +1,14 @@
 <?php
 
-namespace FelipeMateus\IPTVChannels;
+namespace Tschope\IPTVChannels;
 
 use Illuminate\Routing\Router;
 use Illuminate\Support\ServiceProvider;
-use FelipeMateus\IPTVChannels\Middleware\PublicCdnMiddleware;
-use FelipeMateus\IPTVCore\Helpers\IPTVProviderBase;
-use FelipeMateus\IPTVChannels\Dashs\Channels;
-use FelipeMateus\IPTVChannels\Dashs\Groups;
-use FelipeMateus\IPTVChannels\Dashs\Cdns;
+use Tschope\IPTVChannels\Middleware\PublicCdnMiddleware;
+use Tschope\IPTVCore\Helpers\IPTVProviderBase;
+use Tschope\IPTVChannels\Dashs\Channels;
+use Tschope\IPTVChannels\Dashs\Groups;
+use Tschope\IPTVChannels\Dashs\Cdns;
 
 class IPTVProvider extends IPTVProviderBase {
 

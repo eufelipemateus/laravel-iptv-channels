@@ -1,6 +1,6 @@
 <?php
 
-namespace  FelipeMateus\IPTVChannels\Model;
+namespace  Tschope\IPTVChannels\Model;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -22,7 +22,7 @@ class IPTVChannelGroup extends Model
      */
     public function channels()
     {
-        return $this->hasMany('FelipeMateus\IPTVChannels\Model\IPTVChannel');
+        return $this->hasMany('Tschope\IPTVChannels\Model\IPTVChannel');
     }
 
 }

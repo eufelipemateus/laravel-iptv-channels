@@ -1,10 +1,10 @@
 <?php
 
-namespace  FelipeMateus\IPTVChannels\Controllers;
+namespace  Tschope\IPTVChannels\Controllers;
 
 use Illuminate\Http\Request;
-use FelipeMateus\IPTVChannels\Model\IPTVChannelGroup;
-use FelipeMateus\IPTVCore\Controllers\CoreController;
+use Tschope\IPTVChannels\Model\IPTVChannelGroup;
+use Tschope\IPTVCore\Controllers\CoreController;
 
 class GroupController extends CoreController
 {
