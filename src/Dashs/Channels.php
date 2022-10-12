@@ -1,9 +1,9 @@
 <?php
 
-namespace Tschope\IPTVChannels\Dashs;
+namespace FelipeMateus\IPTVChannels\Dashs;
 
-use Tschope\IPTVCore\Helpers\IPTVDashBase;
-use Tschope\IPTVChannels\Model\IPTVChannel;
+use FelipeMateus\IPTVCore\Helpers\IPTVDashBase;
+use FelipeMateus\IPTVChannels\Model\IPTVChannel;
 
 
 class Channels extends IPTVDashBase {

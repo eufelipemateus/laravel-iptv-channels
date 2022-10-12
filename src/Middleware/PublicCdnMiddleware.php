@@ -1,10 +1,10 @@
 <?php
 
-namespace  Tschope\IPTVChannels\Middleware;
+namespace  FelipeMateus\IPTVChannels\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
-use Tschope\IPTVCore\Model\IPTVConfig;
+use FelipeMateus\IPTVCore\Model\IPTVConfig;
 
 class PublicCdnMiddleware
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace  Tschope\IPTVChannels\Controllers;
+namespace  FelipeMateus\IPTVChannels\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
-use Tschope\IPTVChannels\Model\IPTVCdn;
-use Tschope\IPTVCore\Model\IPTVConfig;
-use Tschope\IPTVCore\Controllers\CoreController;
+use FelipeMateus\IPTVChannels\Model\IPTVCdn;
+use FelipeMateus\IPTVCore\Model\IPTVConfig;
+use FelipeMateus\IPTVCore\Controllers\CoreController;
 
 class CdnController extends CoreController
 {

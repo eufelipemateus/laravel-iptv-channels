@@ -1,9 +1,9 @@
 <?php
 
-namespace Tschope\IPTVChannels\Dashs;
+namespace FelipeMateus\IPTVChannels\Dashs;
 
-use Tschope\IPTVCore\Helpers\IPTVDashBase;
-use Tschope\IPTVChannels\Model\IPTVCdn;
+use FelipeMateus\IPTVCore\Helpers\IPTVDashBase;
+use FelipeMateus\IPTVChannels\Model\IPTVCdn;
 
 class Cdns extends IPTVDashBase {
     public static  $title = "CDNs Total";

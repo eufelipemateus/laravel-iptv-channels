@@ -1,10 +1,10 @@
 <?php
 
-namespace  Tschope\IPTVChannels\Model;
+namespace  FelipeMateus\IPTVChannels\Model;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\Pivot;
-use Tschope\IPTVChannels\Model\IPTVChannel;
+use FelipeMateus\IPTVChannels\Model\IPTVChannel;
 
 
 class IPTVUrl extends Pivot

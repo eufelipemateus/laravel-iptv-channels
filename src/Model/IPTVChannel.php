@@ -1,10 +1,10 @@
 <?php
 
-namespace  Tschope\IPTVChannels\Model;
+namespace  FelipeMateus\IPTVChannels\Model;
 
 use Illuminate\Database\Eloquent\Model;
 
-use Tschope\IPTVChannels\Model\IPTVCdn;
+use FelipeMateus\IPTVChannels\Model\IPTVCdn;
 use Illuminate\Support\Facades\DB;
 
 
@@ -26,7 +26,7 @@ class IPTVChannel extends Model
      */
     public function group()
     {
-        return $this->belongsTo('Tschope\IPTVChannels\Model\IPTVChannelGroup');
+        return $this->belongsTo('FelipeMateus\IPTVChannels\Model\IPTVChannelGroup');
     }
 
     /**

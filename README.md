@@ -1,8 +1,8 @@
-# Laravel IPTV Channels - Tschope\IPTVChannels
+# Laravel IPTV Channels - FelipeMateus\IPTVChannels
 
-[![Latest Stable Version](http://poser.pugx.org/tschope/iptv-channels/v)](https://packagist.org/packages/tschope/iptv-channels)  [![Total Downloads](http://poser.pugx.org/tschope/iptv-channels/downloads)](https://packagist.org/packages/tschope/iptv-channels)  [![Latest Unstable Version](http://poser.pugx.org/tschope/iptv-channels/v/unstable)](https://packagist.org/packages/tschope/iptv-channels)  [![License](http://poser.pugx.org/tschope/iptv-channels/license)](https://packagist.org/packages/tschope/iptv-channels)  [![PHP Version Require](http://poser.pugx.org/tschope/iptv-channels/require/php)](https://packagist.org/packages/tschope/iptv-channels)
+[![Latest Stable Version](http://poser.pugx.org/felipemateus/iptv-channels/v)](https://packagist.org/packages/felipemateus/iptv-channels)  [![Total Downloads](http://poser.pugx.org/felipemateus/iptv-channels/downloads)](https://packagist.org/packages/felipemateus/iptv-channels)  [![Latest Unstable Version](http://poser.pugx.org/felipemateus/iptv-channels/v/unstable)](https://packagist.org/packages/felipemateus/iptv-channels)  [![License](http://poser.pugx.org/felipemateus/iptv-channels/license)](https://packagist.org/packages/felipemateus/iptv-channels)  [![PHP Version Require](http://poser.pugx.org/felipemateus/iptv-channels/require/php)](https://packagist.org/packages/felipemateus/iptv-channels)
 
-This is a libary package create to generate and control channel list m3u8 using php Laravel this libary work to [iptv-cms](https://github.com/tschope/laravel-iptv-cms).
+This is a libary package create to generate and control channel list m3u8 using php Laravel this libary work to [iptv-cms](https://github.com/eufelipemateus/laravel-iptv-cms).
 
 ![Screenshot Feipe Mateus IPTV Channels](/screenshots/channel_list.jpg?raw=true)
 
@@ -14,7 +14,7 @@ Tested in Laravel 9.11.
   
 ```bash
 
-composer require tschope/iptv-channels
+composer require felipemateus/iptv-channels
 
 ```
 
@@ -25,7 +25,7 @@ composer require tschope/iptv-channels
 ...
 'providers' => [
 ...
-Tschope\IPTVChannels\IPTVProvider::class,
+FelipeMateus\IPTVChannels\IPTVProvider::class,
 ...
 
 ];
@@ -41,16 +41,16 @@ php artisan migrate
 
 ## Extra
 
-- [more info about iptv-channels](https://tschope.com/blog/2021/08/pacote-gerenciador-de-canais-iptv-no-laravel)
+- [more info about iptv-channels](https://felipemateus.com/blog/2021/08/pacote-gerenciador-de-canais-iptv-no-laravel)
 
-- To add new locale compatibility you need contribute to [iptv-core](https://github.com/tschope/laravel-iptv-core/blob/main/src/Helpers/Locale.php) first.
+- To add new locale compatibility you need contribute to [iptv-core](https://github.com/eufelipemateus/laravel-iptv-core/blob/main/src/Helpers/Locale.php) first.
 
 - [Discord Channel to discussion about sugestion,Feature and etc.](https://discord.com/channels/885888529845076078/953528360615690270)
 
 ## License
 
-[![License](http://poser.pugx.org/tschope/iptv-channels/license)](https://packagist.org/packages/tschope/iptv-channels)
+[![License](http://poser.pugx.org/felipemateus/iptv-channels/license)](https://packagist.org/packages/felipemateus/iptv-channels)
 
 ## Author
 
-[Felipe Mateus](https://tschope.com)
+[Felipe Mateus](https://felipemateus.com)
