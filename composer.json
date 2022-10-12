@@ -28,9 +28,9 @@
         "laravel-package"
     ],
     "require": {
-        "php": "^7.4|^8.0",
-        "laravel/framework": "^8.54",
-        "felipemateus/iptv-core":"1.1"
+        "php": "^8.0|^8.1",
+        "laravel/framework": "^9.11",
+        "felipemateus/iptv-core":"1.2"
 	},
 	"autoload": {
         "psr-4": {
