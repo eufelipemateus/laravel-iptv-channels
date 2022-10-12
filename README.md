@@ -8,7 +8,7 @@ This is a libary package create to generate and control channel list m3u8 using 
 
 ## Instaling
 
-Tested in Laravel 8.0.
+Tested in Laravel 9.0.
 
 ### Run the command below in root to install the package in your project
   
