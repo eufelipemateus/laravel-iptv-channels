@@ -31,7 +31,7 @@
 
                             @if($url_cdn && !$donwload)
                             <div class="col-md-2">
-							  <a href="{{  route('cdn-playslit',$cdn->slug) }}" target="_blank">Playslit</a>
+							    <a href="{{  route('cdn-playslit',$cdn->slug) }}" target="_blank">Playslit</a>
 							</div>
                             @endif
                             @if ($url_cdn && $donwload)
@@ -43,9 +43,12 @@
 							<div class="col-md-2">
 							  <a href="{{  route('show_cdn',$cdn->id) }}">{{ __('edit') }}</a>
 							</div>
+                            @if ($cdn->canDelete())
 							<div class="col-md-2">
 							  <a href="{{  route('delete_cdn',$cdn->id) }}">{{ __('delete')}}</a>
 							</div>
+                            @endif
+
 						</div>
 					@endforeach
 
