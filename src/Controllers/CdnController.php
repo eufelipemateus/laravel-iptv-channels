@@ -5,6 +5,7 @@ namespace  FelipeMateus\IPTVChannels\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
 use FelipeMateus\IPTVChannels\Model\IPTVCdn;
+use \FelipeMateus\IPTVCustomers\Models\IPTVCdn as IPTVCdnCustomer;
 use FelipeMateus\IPTVCore\Model\IPTVConfig;
 use FelipeMateus\IPTVCore\Controllers\CoreController;
 
@@ -97,7 +98,13 @@ class CdnController extends CoreController
      * @return view -> IPTV::channel_list
      */
     public function list(){
-		$data['list'] = IPTVCdn::all();
+
+        if(class_exists(IPTVCdnCustomer::class)){
+            $data['list'] = IPTVCdnCustomer::all();
+        }else {
+            $data['list'] = IPTVCdn::all();
+        }
+
         $data['url_cdn'] = IPTVConfig::get('URL_CDN');
         $data['donwload'] =  IPTVConfig::get('DOWNLOAD_FILE');
 		return view("IPTV::cdn_list",$data);
