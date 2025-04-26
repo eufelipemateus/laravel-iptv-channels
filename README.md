@@ -1,5 +1,8 @@
 # Laravel IPTV Channels - FelipeMateus\IPTVChannels
 
+# Atention! This package was moved to laravel-iptv-cms
+
+
 [![Latest Stable Version](http://poser.pugx.org/felipemateus/iptv-channels/v)](https://packagist.org/packages/felipemateus/iptv-channels)  [![Total Downloads](http://poser.pugx.org/felipemateus/iptv-channels/downloads)](https://packagist.org/packages/felipemateus/iptv-channels)  [![Latest Unstable Version](http://poser.pugx.org/felipemateus/iptv-channels/v/unstable)](https://packagist.org/packages/felipemateus/iptv-channels)  [![License](http://poser.pugx.org/felipemateus/iptv-channels/license)](https://packagist.org/packages/felipemateus/iptv-channels)  [![PHP Version Require](http://poser.pugx.org/felipemateus/iptv-channels/require/php)](https://packagist.org/packages/felipemateus/iptv-channels)
 
 This is a libary package create to generate and control channel list m3u8 using php Laravel this libary work to [iptv-cms](https://github.com/eufelipemateus/laravel-iptv-cms).
